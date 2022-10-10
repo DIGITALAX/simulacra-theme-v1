@@ -4,11 +4,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        offPink: "#F3E2D9",
+        offPink: "#F0E3DA",
         olive: "#7a731d",
+        offBlack: "#111313"
+      },
+      fontFamily: {
+        firaM: "Fira Medium",
+        firaB: "Fira Bold"
+      },
+      truncate: {
+        lines: {
+          2: "2",
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-truncate-multiline")()],
   darkMode: "class",
 };

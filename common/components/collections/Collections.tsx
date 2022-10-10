@@ -21,13 +21,14 @@ export const Collections = (): JSX.Element => {
         return (
           <div
             key={key}
-            className="relative mt-10 mb-10 ml-4 mr-4 break-inside-avoid-column h-[65rem] inline-block cursor-pointer"
+            className="relative mt-16 mb-16 ml-4 mr-4 break-inside-avoid-column h-[35rem] inline-block text-offBlack"
           >
             <Link href={`/token/${url}`}>
-              <div className="mt-2 mb-2 relative">
+              <div className="mt-2 mb-2 border-t-4 border-l-4 border-r-2 border-b-2 border-offBlack rounded-xl">
                 <Image
                   width={500}
                   height={500}
+                  priority
                   unoptimized={true}
                   className="object-cover rounded-lg"
                   loader={() => `https://${imageURL[0]}.ipfs.dweb.link`}
@@ -35,17 +36,24 @@ export const Collections = (): JSX.Element => {
                 />
               </div>
             </Link>
-            <p className="mt-2 absolute text-olive text-lg">{name}</p>
-            <hr className="mt-2 relative top-10 border-0 bg-olive h-0.5" />
+            <p className="mt-2 absolute text-lg font-firaB">{name}</p>
+            <div className="flex justify-end mt-3 cursor-pointer">
+              <Link href={`/token/${url}`}>
+                <Image
+                  src="/images/expand.png"
+                  width={25}
+                  height={25}
+                  alt="Expand"
+                  priority
+                />
+              </Link>
+            </div>
             <p className="relative top-12 float-left mr-4">0.32 Ξ</p>
             <p className="relative top-12">1/1</p>
-            <p className="relative mt-4 top-10 mb-16">
+
+            <div className="relative mt-4 top-10 mb-16 truncate-2-lines font-firaM text-xs">
               {token.token.metadata.description}
-            </p>
-            <hr className="relative border-0 bg-olive h-px" />
-            <Link href={`/token/${url}`}>
-              <button className="mt-4">Expand</button>
-            </Link>
+            </div>
           </div>
         );
       })}
