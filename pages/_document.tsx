@@ -43,6 +43,18 @@ class Document extends NextDocument {
               font-weight: 400;
               src: url("./fonts/FiraCode-Retina.ttf");
             }
+
+            @font-face {
+              font-family: "Fira Light";
+              font-weight: 400;
+              src: url("./fonts/FiraCode-Light.ttf");
+            }
+
+            @font-face {
+              font-family: "Jack Lane";
+              font-weight: 400;
+              src: url("./fonts/jacklane_2.woff");
+            }
             `,
             }}
           ></style>

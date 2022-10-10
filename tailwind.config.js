@@ -6,13 +6,18 @@ module.exports = {
       colors: {
         offPink: "#F0E3DA",
         olive: "#7a731d",
-        offBlack: "#111313"
+        offBlack: "#111313",
+        offWhite: "#F7F8E8",
+        tagBlue: "#388AFF",
+        tagPink: "#FE8AA7"
       },
       fontFamily: {
         firaM: "Fira Medium",
         firaB: "Fira Bold",
         firaRet: "Fira Ret",
-        firaReg: "Fira Reg"
+        firaReg: "Fira Reg",
+        firaL: "Fira Light",
+        jacklane: "Jack Lane"
       },
       truncate: {
         lines: {
