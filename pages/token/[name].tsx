@@ -62,7 +62,7 @@ const TokenDetails = ({ token }: any): JSX.Element => {
             />
           </div>
         </div>
-        <div className="flex justify-end relative right-20 w-full h-full top-6">
+        <div className="flex justify-end relative right-20 w-full h-full top-2 sm:top-6">
           <p className="text-black font-firaL text-4xl absolute">0.32 Ξ</p>
           <Link
             target="_blank"
@@ -86,13 +86,13 @@ const TokenDetails = ({ token }: any): JSX.Element => {
             Single Edition
           </p>
         </div>
-        <p className="font-firaReg text-sm mt-6 mb-2 w-1/3 relative left-12">
+        <p className="font-firaReg text-sm mt-6 mb-2 w-5/6 sm:w-1/3 relative left-8 sm:left-12 top-28 sm:top-auto">
           {token[0].token.metadata.description.split("Synth Graph:")[0]}
         </p>
-        <p className="font-firaB text-sm mt-6 relative left-12 w-fit">
+        <p className="font-firaB text-sm mt-6 relative left-8 sm:left-12 w-fit top-32 sm:top-auto">
           Synth Graph:{" "}
         </p>
-        <p className="font-firaReg text-sm w-1/3 relative left-12">
+        <p className="font-firaReg text-sm w-5/6 sm:w-1/3 relative left-8 sm:left-12 top-36 sm:top-auto">
           {token[0].token.metadata.description.split("Synth Graph:")[1]}
         </p>
       </div>
