@@ -22,20 +22,23 @@ const TokenDetails = (): JSX.Element => {
           const metadataImage = token.token.metadata?.image.split("//");
           const imageURL = metadataImage[1].split("?");
           return (
-            <div key={key} className="relative top-10 left-12">
+            <div key={key} className="absolute top-10 left-12">
               <p className="font-firaM text-5xl mb-4">
                 {token.token.metadata.properties.name.toUpperCase()}
               </p>
-              <div className="mt-2 mb-2 relative cursor-pointer">
-                <img
-                  className="rounded-lg h-[50rem]"
+              <div className="mt-2 mb-2 relative h-[35rem] w-[35rem] cursor-pointer -left-24">
+                <Image
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                  loader={() => `https://${imageURL[0]}.ipfs.dweb.link`}
                   src={`https://${imageURL[0]}.ipfs.dweb.link`}
                 />
               </div>
               <p className="font-firaReg text-sm mt-6 mb-2 w-1/3">
                 {token.token.metadata.description.split("Synth Graph:")[0]}
               </p>
-              <p className="font-firaB text-sm mt-6">Synth Graph:{" "}</p>
+              <p className="font-firaB text-sm mt-6">Synth Graph: </p>
               <p className="font-firaReg text-sm w-1/3">
                 {token.token.metadata.description.split("Synth Graph:")[1]}
               </p>
@@ -45,7 +48,7 @@ const TokenDetails = (): JSX.Element => {
                 href={`https://market.zora.co/collections/${token.token.collectionAddress}`}
               >
                 <a>
-                <button>Collect</button>
+                  <button>Collect</button>
                 </a>
               </Link>
             </div>

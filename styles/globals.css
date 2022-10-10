@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: Fira Bold;
+    font-weight: 400;
+    src: url(/fonts/FiraCode-Bold.ttf) format("tff");
+  }
+  @font-face {
+    font-family: Fira Medium;
+    font-weight: 500;
+    src: url(/fonts/FiraCode-Medium.ttf) format("tff");
+  }
+}
+
 html,
 body {
   padding: 0;

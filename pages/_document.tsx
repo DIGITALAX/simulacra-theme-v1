@@ -11,9 +11,9 @@ class Document extends NextDocument {
           <meta property="og:description" content="Simulacra Theme" />
           <meta property="og:image" content="" />
           <meta property="twitter:card" content="summary" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preload" href="https://fonts.googleapis.com" />
           <link
-            rel="preconnect"
+            rel="preload"
             href="https://fonts.gstatic.com"
             crossOrigin="true"
           />
