@@ -31,6 +31,18 @@ class Document extends NextDocument {
             font-weight: 400;
             src: url("./fonts/FiraCode-Bold.ttf");
             }
+
+            @font-face {
+              font-family: "Fira Reg";
+              font-weight: 400;
+              src: url("./fonts/FiraCode-Regular.ttf");
+            }
+
+            @font-face {
+              font-family: "Fira Reg";
+              font-weight: 400;
+              src: url("./fonts/FiraCode-Retina.ttf");
+            }
             `,
             }}
           ></style>

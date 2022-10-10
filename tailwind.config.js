@@ -10,7 +10,9 @@ module.exports = {
       },
       fontFamily: {
         firaM: "Fira Medium",
-        firaB: "Fira Bold"
+        firaB: "Fira Bold",
+        firaRet: "Fira Ret",
+        firaReg: "Fira Reg"
       },
       truncate: {
         lines: {
