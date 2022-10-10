@@ -13,7 +13,7 @@ const { chains, provider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "My RainbowKit App",
+  appName: "Simulacra Theme",
   chains,
 });
 
@@ -22,6 +22,8 @@ const wagmiClient = createClient({
   connectors,
   provider,
 });
+
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

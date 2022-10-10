@@ -16,13 +16,12 @@ export const Collections = (): JSX.Element => {
         const metadataImage = token.token.metadata?.image.split("//");
         const imageURL = metadataImage[1].split("?");
         const name = token.token.metadata.properties.name;
-        const url = name.replace(/\s+/g, "");
         return (
           <div
             key={key}
             className="relative mt-16 mb-16 ml-4 mr-4 break-inside-avoid-column h-[35rem] inline-block text-offBlack"
           >
-            <Link href={`/token/${url}`}>
+            <Link href={`/token/${token.token.collectionAddress}`}>
               <a>
                 <div className="mt-2 mb-2 border-t-4 border-l-4 border-r-2 border-b-2 border-offBlack rounded-xl cursor-pointer h-[29rem] relative">
                   <Image
@@ -39,7 +38,7 @@ export const Collections = (): JSX.Element => {
             </Link>
             <p className="mt-2 absolute text-lg font-firaB">{name}</p>
             <div className="flex justify-end mt-3 cursor-pointer">
-              <Link href={`/token/${url}`}>
+              <Link href={`/token/${token.token.collectionAddress}`}>
                 <a>
                   <Image
                     src="/images/expand.png"

@@ -6,6 +6,12 @@ export const tokens = (state: any = [{}], action: any) => {
         tokens: action.tokens,
       };
 
+    case "TOKEN_LOADED":
+      return {
+        ...state,
+        token: action.token,
+      };
+
     default:
       return state;
   }

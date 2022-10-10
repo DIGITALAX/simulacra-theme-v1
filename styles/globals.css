@@ -4,15 +4,41 @@
 
 @layer base {
   @font-face {
-    font-family: Fira Bold;
+    font-family: "Fira Medium";
     font-weight: 400;
-    src: url(/fonts/FiraCode-Bold.ttf) format("tff");
+    src: url("./../public/fonts/FiraCode-Medium.ttf");
   }
+
   @font-face {
-    font-family: Fira Medium;
-    font-weight: 500;
-    src: url(/fonts/FiraCode-Medium.ttf) format("tff");
+  font-family: "Fira Bold";
+  font-weight: 400;
+  src: url("./../public/fonts/FiraCode-Bold.ttf");
   }
+
+  @font-face {
+    font-family: "Fira Reg";
+    font-weight: 400;
+    src: url("./../public/fonts/FiraCode-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Fira Reg";
+    font-weight: 400;
+    src: url("./../public/fonts/FiraCode-Retina.ttf");
+  }
+
+  @font-face {
+    font-family: "Fira Light";
+    font-weight: 400;
+    src: url("./../public/fonts/FiraCode-Light.ttf");
+  }
+
+  @font-face {
+    font-family: "Jack Lane";
+    font-weight: 400;
+    src: url("./../public/fonts/jacklane_2.woff");
+  }
+  
 }
 
 html,

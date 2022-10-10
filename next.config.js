@@ -5,6 +5,8 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  // assetPrefix: "./",
+  // optimizeFonts: false,
 };
 
 module.exports = nextConfig;
