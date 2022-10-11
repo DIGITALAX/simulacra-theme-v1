@@ -45,13 +45,14 @@ const TokenDetails = ({ token }: any): JSX.Element => {
   const metadataImage = token[0].token.metadata?.image.split("//");
   const imageURL = metadataImage[1].split("?");
   return (
-    <div className="bg-offPink min-h-fit h-[100rem]">
+    <div className="bg-gradient-to-b from-gray-100 via-white to-offWhite min-h-fit h-[100rem]">
       <div className="absolute top-10">
-        <p className="font-jacklane text-5xl mb-4 left-12 absolute">
+        <p className="font-jacklane text-7xl mb-4 left-12 absolute">
           {token[0].token.metadata.properties.name.toUpperCase()}
         </p>
-        <div className="mt-2 mb-24 relative h-[33rem] top-16 w-full block bg-offWhite justify-start">
-          <div className="p-6 relative h-[90%] top-6">
+        <div className="mt-28 sm:mt-8 mb-24 relative h-[36rem] top-16 w-full block bg-offWhite justify-start border-t-8 border-b-8 border-lightWhite">
+          <div className="relative min-w-full min-h-full inline-block">
+            <div className="absolute min-w-full min-h-[90%] top-7">
             <Image
               priority
               layout="fill"
@@ -60,6 +61,7 @@ const TokenDetails = ({ token }: any): JSX.Element => {
               loader={() => `https://${imageURL[0]}.ipfs.dweb.link`}
               src={`https://${imageURL[0]}.ipfs.dweb.link`}
             />
+            </div>
           </div>
         </div>
         <div className="flex justify-end relative right-20 w-full h-full top-2 sm:top-6">

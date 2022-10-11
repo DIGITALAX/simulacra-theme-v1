@@ -11,7 +11,7 @@ export const Collections = (): JSX.Element => {
   }, []);
   const tokens = useSelector((state: any) => state.tokens.tokens);
   return (
-    <div className="relative columns-1 sm:columns-2 md:columns-3 bg-offPink">
+    <div className="relative columns-1 sm:columns-2 md:columns-3 bg-gray-100">
       {tokens?.map((token: any, key: number) => {
         const metadataImage = token.token.metadata?.image.split("//");
         const imageURL = metadataImage[1].split("?");
