@@ -10,7 +10,9 @@ module.exports = {
         offWhite: "#F7F8E8",
         tagBlue: "#388AFF",
         tagPink: "#FE8AA7",
-        lightWhite: "#FBFBF1"
+        lightWhite: "#FBFBF1",
+        lightYellow: "#FFFFF9",
+        lightPurple: "#EDE5FB"
       },
       fontFamily: {
         firaM: "Fira Medium",

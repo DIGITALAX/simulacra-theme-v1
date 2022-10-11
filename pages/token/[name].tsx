@@ -45,7 +45,7 @@ const TokenDetails = ({ token }: any): JSX.Element => {
   const metadataImage = token[0].token.metadata?.image.split("//");
   const imageURL = metadataImage[1].split("?");
   return (
-    <div className="bg-gradient-to-b from-gray-100 via-white to-offWhite min-h-fit h-[100rem]">
+    <div className="bg-gradient-to-b from-lightYellow via-white to-lightPurple min-h-fit h-[100rem]">
       <div className="absolute top-10">
         <p className="font-jacklane text-7xl mb-4 left-12 absolute">
           {token[0].token.metadata.properties.name.toUpperCase()}
@@ -53,14 +53,14 @@ const TokenDetails = ({ token }: any): JSX.Element => {
         <div className="mt-28 sm:mt-8 mb-24 relative h-[36rem] top-16 w-full block bg-offWhite justify-start border-t-8 border-b-8 border-lightWhite">
           <div className="relative min-w-full min-h-full inline-block">
             <div className="absolute min-w-full min-h-[90%] top-7">
-            <Image
-              priority
-              layout="fill"
-              objectFit="contain"
-              unoptimized
-              loader={() => `https://${imageURL[0]}.ipfs.dweb.link`}
-              src={`https://${imageURL[0]}.ipfs.dweb.link`}
-            />
+              <Image
+                priority
+                layout="fill"
+                objectFit="contain"
+                unoptimized
+                loader={() => `https://${imageURL[0]}.ipfs.dweb.link`}
+                src={`https://${imageURL[0]}.ipfs.dweb.link`}
+              />
             </div>
           </div>
         </div>
