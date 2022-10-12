@@ -9,7 +9,7 @@ import store from "../store/store";
 import { Header } from "../components/common/Layout/Header";
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon],
+  [chain.mainnet],
   [publicProvider()]
 );
 

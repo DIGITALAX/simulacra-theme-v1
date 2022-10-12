@@ -1,10 +1,20 @@
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectWallet } from "../Buttons/ConnectWallet";
 import Image from "next/image";
 import Link from "next/link";
 
 export const Header = (): JSX.Element => {
   return (
-    <div className="flex w-full h-[24rem] sm:h-[13rem] bg-lightYellow relative border-t-4 border-b-4 border-offGray selection:bg-offBlue">
+    <div className="flex w-full h-[24rem] sm:h-[13rem] bg-lightYellow relative border-t-4 border-b-4 border-offGray selection:bg-offBlue text-offBlack">
+      <div className="flex justify-center w-full text-center top-2 font-firaReg relative text-sm text-offBlack">
+        <p className="mr-3 ml-3 hover:text-offBlue underline underline-offset-4 cursor-pointer h-fit">
+          <Link href={"/"}>
+          HOME
+          </Link>
+        </p>
+        <p className="mr-3 ml-3 hover:text-offBlue underline underline-offset-4 cursor-pointer h-fit">
+          <ConnectWallet />
+        </p>
+      </div>
       <div className="absolute top-10 left-6 text-right">
         <p className="font-firaB text-sm">SIMULACRA</p>
         <p className="font-firaReg text-sm">
@@ -24,11 +34,12 @@ export const Header = (): JSX.Element => {
           </Link>
         </div>
         <div className="relative top-[20.3rem] sm:top-[8.3rem] -left-6 right-auto sm:left-auto sm:right-40 scale-x-[-1] sm:scale-x-100">
-        <Image width={40} height={20} src="/images/arrow.svg" />
+          <Image width={40} height={20} src="/images/arrow.svg" />
         </div>
-        <p className="font-firaReg absolute sm:left-auto -left-8 top-80 sm:top-32">TAKE A LOOK</p>
+        <p className="font-firaReg absolute sm:left-auto -left-8 top-80 sm:top-32">
+          TAKE A LOOK
+        </p>
       </div>
-      {/* <ConnectButton /> */}
     </div>
   );
 };
