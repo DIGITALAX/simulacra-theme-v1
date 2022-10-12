@@ -45,8 +45,8 @@ const TokenDetails = ({ token }: any): JSX.Element => {
   const metadataImage = token[0].token.metadata?.image.split("//");
   const imageURL = metadataImage[1].split("?");
   return (
-    <div className="bg-gradient-to-b from-lightYellow via-white to-lightPurple min-h-fit h-[100rem] selection:bg-offBlue relative">
-      <div className="absolute top-10">
+    <div className="bg-gradient-to-b from-lightYellow via-white to-lightPurple min-h-fit h-[140rem] sm:h-[100rem] selection:bg-offBlue relative min-w-full w-full">
+      <div className="absolute top-10 max-w-full">
         <p className="font-jacklane text-7xl mb-4 left-12 absolute">
           {token[0].token.metadata.properties.name.toUpperCase()}
         </p>
@@ -64,17 +64,18 @@ const TokenDetails = ({ token }: any): JSX.Element => {
             </div>
           </div>
         </div>
-        <div className="w-[95%] relative h-[27rem] border-4 border-offBlack bg-lightYellow flex left-11 overflow-hidden">
-          <div className="flex justify-start absolute w-full h-fit left-10 top-6 z-10">
-            <p className="text-black font-firaL text-5xl absolute">0.32Ξ</p>
-            <p className="absolute top-14 font-firaM left-16 text-base text-offBlack/75">
+        <div className="w-[95%] relative h-[83rem] sm:h-[39rem] l:h-[34rem] xl:h-[27rem] border-4 border-offBlack bg-lightYellow flex left-2 sm:left-4 md:left-6 lg:left-7 xl:left-10 overflow-hidden justify-end">
+          <div className="flex relative w-96 h-[75rem] sm:h-[39rem] l:h-[34rem] xl:h-[27rem] z-10 top-6 left-8">
+            <p className="text-black -left-3 sm:left-auto font-firaL text-5xl absolute">
+              0.32Ξ
+            </p>
+            <p className="absolute left-10 top-14 font-firaM sm:left-16 text-base text-offBlack/75">
               ($420.22)
             </p>
             <Link
               href={`https://market.zora.co/collections/${token[0].token.collectionAddress}`}
-              className=""
             >
-              <a className="absolute left-44 cursor-pointer">
+              <a className="absolute left-44 top-auto sm:left-auto sm:top-28 lg:top-auto lg:left-44 cursor-pointer">
                 <button className="border-2 font-firaReg border-offBlack relative p-1 w-32 hover:opacity-70">
                   COLLECT{" "}
                   <Image
@@ -88,20 +89,20 @@ const TokenDetails = ({ token }: any): JSX.Element => {
               </a>
             </Link>
             <div className="absolute">
-              <div className="relative m-0 top-14 w-fit h-fit">
-                <div className="rounded-full border-2 border-offBlack bg-brightGreen w-4 h-4 mr-2 relative left-44"></div>
-                <p className="font-firaReg relative left-[12.4rem] -top-[1.2rem]">
+              <div className="relative m-0 top-28 sm:top-44 lg:top-14 w-fit h-fit">
+                <div className="rounded-full border-2 border-offBlack bg-brightGreen w-4 h-4 mr-2 relative left-auto lg:left-44"></div>
+                <p className="font-firaReg relative left-6 lg:left-[12.4rem] -top-[1.2rem]">
                   metadata
                 </p>
               </div>
-              <div className="relative m-0 top-11 w-fit h-fit opacity-20">
-                <div className="rounded-full border-2 border-offBlack bg-offWhite w-4 h-4 mr-2 relative left-44"></div>
-                <p className="font-firaReg relative left-[12.4rem] -top-[1.2rem]">
+              <div className="relative m-0 top-24 sm:top-40 lg:top-11 w-fit h-fit opacity-20">
+                <div className="rounded-full border-2 border-offBlack bg-offWhite w-4 h-4 mr-2 relative left-auto lg:left-44"></div>
+                <p className="font-firaReg relative left-6 lg:left-[12.4rem] -top-[1.2rem]">
                   stream
                 </p>
               </div>
             </div>
-            <div className="absolute top-28 font-firaM">
+            <div className="absolute -left-2 top-44 sm:top-60 lg:top-28 lg:left-auto font-firaM whitespace-nowrap">
               <div className="m-3 relative">
                 <div className="relative float-left top-1.5">
                   <Image
@@ -145,11 +146,11 @@ const TokenDetails = ({ token }: any): JSX.Element => {
                 </div>
               </div>
             </div>
-            <div className="absolute top-72">
+            <div className="absolute top-96 sm:top-[27rem] lg:top-72">
               <p className="text-offBlack text-lg font-firaB relative">
                 SYNTHESIST
               </p>
-              <hr className="bg-offBlack h-1 w-72 absolute" />
+              <hr className="bg-offBlack h-1 w-36 lg:w-72 absolute" />
               <div className="absolute h-10 w-16 top-12 border-r-4 border-t-2 border-b-2 border-l-2 border-offBlack rounded-md">
                 <Image
                   src="/images/profileimage.png"
@@ -159,7 +160,7 @@ const TokenDetails = ({ token }: any): JSX.Element => {
                   priority
                 />
               </div>
-              <div className="absolute text-sm whitespace-nowrap left-20 top-12">
+              <div className="absolute text-sm whitespace-nowrap left-auto lg:left-20 top-24 lg:top-12">
                 <p className="font-firaB">Emma-Jane MacKinnon-Lee</p>
                 <Link href={"https://lenster.xyz/u/emmajane1313.lens"}>
                   <a target="_blank" rel="noopener noreferrer">
@@ -171,17 +172,19 @@ const TokenDetails = ({ token }: any): JSX.Element => {
               </div>
             </div>
           </div>
-          <div className="relative flex w-4/6 z-0 border-offBlack border-l-2 left-96">
-            <p className="font-firaReg text-base top-2 mt-6 mb-2 w-full text-right absolute left-16">
+          <div className="relative inline-flex sm:flex z-0 border-offBlack sm:border-l-2 sm:w-9/12 sm:flex-col sm:top-auto top-[36rem] mr-16 sm:mr-0 h-fit sm:h-auto">
+            <div className="font-firaReg inline-block text-sm w-full sm:text-xs md:text-sm lg:text-base top-2 mt-6 mb-2 sm:text-right sm:left-auto sm:w-[95%] mr-0 break-words absolute sm:items-end sm:pl-10">
               {token[0].token.metadata.description.split("Synth Graph:")[0]}
-            </p>
-            <hr className="bg-offBlack top-52 h-0.5 w-5/6 absolute left-56" />
-            <p className="font-firaB text-base mt-6 w-full text-right absolute top-56 left-16">
-              SYNTH GRAPH
-            </p>
-            <p className="font-firaReg text-offBlack/75 text-sm w-full text-right top-72 relative left-16">
-              {token[0].token.metadata.description.split("Synth Graph:")[1]}
-            </p>
+            </div>
+            <hr className="bg-offBlack top-72 l:top-52 xl:top-44 h-0.5 sm:w-[84%] md:w-[88%] lg:w-[90%] inline-block absolute mr-0 break-words absolute sm:items-end ml-10 sm:visible invisible" />
+            <div className="relative top-12">
+              <div className="font-firaB text-sm sm:text-xs md:text-base mt-6 absolute top-80 l:top-56 xl:top-48 sm:items-end sm:text-right w-full sm:w-[95%] break-words inline-block items-center sm:left-auto">
+                SYNTH GRAPH
+              </div>
+              <div className="font-firaReg text-offBlack/75 text-sm sm:text-xs md:text-sm sm:text-right top-[23.1rem] l:top-72 xl:top-64 relative sm:items-end w-full sm:w-[95%] break-words inline-block sm:pl-10 sm:left-auto h-fit">
+                {token[0].token.metadata.description.split("Synth Graph:")[1]}
+              </div>
+            </div>
           </div>
         </div>
       </div>

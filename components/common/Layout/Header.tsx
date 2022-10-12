@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Header = (): JSX.Element => {
   return (
-    <div className="flex w-full h-[24rem] sm:h-[13rem] bg-lightYellow relative border-t-4 border-b-4 border-offGray selection:bg-offBlue text-offBlack">
+    <div className="flex min-w-full w-full sm:w-full h-[24rem] sm:h-[13rem] bg-lightYellow relative border-t-4 border-b-4 border-offGray selection:bg-offBlue text-offBlack">
       <div className="flex justify-center w-full text-center top-2 font-firaReg relative text-sm text-offBlack">
         <div className="mr-3 ml-3 hover:text-offBlue underline underline-offset-4 cursor-pointer h-fit">
           <Link href={"/"}>HOME</Link>

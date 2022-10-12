@@ -50,13 +50,6 @@ export const Collections = (): JSX.Element => {
                 </a>
               </Link>
             </div>
-            {/* <p className="relative top-5 float-left text-5xl mr-4 font-firaReg">
-              0.32 Ξ
-            </p>
-            <p className="relative top-6 flex justify-end text-3xl font-firaReg">
-              1/1
-            </p> */}
-
             <div className="relative mt-4 top-2 mb-16 truncate-2-lines font-firaM text-xs">
               {token.token.metadata.description}
             </div>

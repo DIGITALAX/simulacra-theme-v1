@@ -8,7 +8,7 @@ const Home: NextPage = (): JSX.Element => {
       <Head>
         <title></title>
         <meta name="description" content="Simulacra Theme v1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Collections />
     </div>
