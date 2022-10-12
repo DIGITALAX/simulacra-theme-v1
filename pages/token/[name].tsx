@@ -45,7 +45,7 @@ const TokenDetails = ({ token }: any): JSX.Element => {
   const metadataImage = token[0].token.metadata?.image.split("//");
   const imageURL = metadataImage[1].split("?");
   return (
-    <div className="bg-gradient-to-b from-lightYellow via-white to-lightPurple min-h-fit h-[100rem] selection:bg-offBlue">
+    <div className="bg-gradient-to-b from-lightYellow via-white to-lightPurple min-h-fit h-[100rem] selection:bg-offBlue relative">
       <div className="absolute top-10">
         <p className="font-jacklane text-7xl mb-4 left-12 absolute">
           {token[0].token.metadata.properties.name.toUpperCase()}
@@ -64,7 +64,7 @@ const TokenDetails = ({ token }: any): JSX.Element => {
             </div>
           </div>
         </div>
-        <div className="flex justify-end relative right-96 w-full h-fit top-2 sm:top-6">
+        <div className="flex justify-end relative right-20 sm:right-96 w-full h-fit top-2 sm:top-6">
           <p className="text-black font-firaL text-4xl absolute">0.32Ξ</p>
           <Link
             target="_blank"
