@@ -45,7 +45,7 @@ const TokenDetails = ({ token }: any): JSX.Element => {
   const metadataImage = token[0].token.metadata?.image.split("//");
   const imageURL = metadataImage[1].split("?");
   return (
-    <div className="bg-gradient-to-b from-lightYellow via-white to-lightPurple min-h-fit h-[100rem] selection:bg-offGreen">
+    <div className="bg-gradient-to-b from-lightYellow via-white to-lightPurple min-h-fit h-[100rem] selection:bg-offBlue">
       <div className="absolute top-10">
         <p className="font-jacklane text-7xl mb-4 left-12 absolute">
           {token[0].token.metadata.properties.name.toUpperCase()}

@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./common/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -14,6 +17,8 @@ module.exports = {
         lightYellow: "#FFFFF9",
         lightPurple: "#EDE5FB",
         offGreen: "#BEFD4E",
+        offGray: "#FBFBEF",
+        offBlue: "#40C0F3",
       },
       fontFamily: {
         firaM: "Fira Medium",
@@ -22,6 +27,7 @@ module.exports = {
         firaReg: "Fira Reg",
         firaL: "Fira Light",
         jacklane: "Jack Lane",
+        thunder: "Love of Thunder",
       },
       truncate: {
         lines: {

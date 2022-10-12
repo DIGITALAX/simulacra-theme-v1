@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { loadTokens } from "../../../store/interactions";
+import { loadTokens } from "../../store/interactions";
 
 export const Collections = (): JSX.Element => {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ export const Collections = (): JSX.Element => {
   }, []);
   const tokens = useSelector((state: any) => state.tokens.tokens);
   return (
-    <div className="relative columns-1 sm:columns-2 md:columns-3 bg-gradient-to-b from-lightYellow via-white to-lightPurple selection:bg-offGreen">
+    <div className="relative columns-1 sm:columns-2 md:columns-3 bg-gradient-to-b from-lightYellow via-white to-lightPurple selection:bg-offBlue">
       {tokens?.map((token: any, key: number) => {
         const metadataImage = token.token.metadata?.image.split("//");
         const imageURL = metadataImage[1].split("?");

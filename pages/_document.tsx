@@ -61,6 +61,12 @@ class Document extends NextDocument {
               font-weight: 400;
               src: url("./fonts/jacklane_2.woff");
             }
+
+            @font-face {
+              font-family: "Love of Thunder";
+              font-weight: 400;
+              src: url("./fonts/A Love of Thunder.ttf");
+            }
             `,
             }}
           ></style>

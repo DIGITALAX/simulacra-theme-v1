@@ -10,9 +10,9 @@
   }
 
   @font-face {
-  font-family: "Fira Bold";
-  font-weight: 400;
-  src: url("./../public/fonts/FiraCode-Bold.ttf");
+    font-family: "Fira Bold";
+    font-weight: 400;
+    src: url("./../public/fonts/FiraCode-Bold.ttf");
   }
 
   @font-face {
@@ -38,7 +38,12 @@
     font-weight: 400;
     src: url("./../public/fonts/jacklane_2.woff");
   }
-  
+
+  @font-face {
+    font-family: "Love of Thunder";
+    font-weight: 400;
+    src: url("./../public/fonts/A Love of Thunder.ttf");
+  }
 }
 
 html,
