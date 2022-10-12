@@ -7,15 +7,13 @@ export const Header = (): JSX.Element => {
     <div className="flex w-full h-[24rem] sm:h-[13rem] bg-lightYellow relative border-t-4 border-b-4 border-offGray selection:bg-offBlue text-offBlack">
       <div className="flex justify-center w-full text-center top-2 font-firaReg relative text-sm text-offBlack">
         <p className="mr-3 ml-3 hover:text-offBlue underline underline-offset-4 cursor-pointer h-fit">
-          <Link href={"/"}>
-          HOME
-          </Link>
+          <Link href={"/"}>HOME</Link>
         </p>
         <p className="mr-3 ml-3 hover:text-offBlue underline underline-offset-4 cursor-pointer h-fit">
           <ConnectWallet />
         </p>
       </div>
-      <div className="absolute top-10 left-6 text-right">
+      <div className="absolute top-20 sm:top-10 left-6 text-right">
         <p className="font-firaB text-sm">SIMULACRA</p>
         <p className="font-firaReg text-sm">
           AN NFT MARKET <br /> INTERFACE THEME <br /> for <br /> OPEN SOURCE{" "}
