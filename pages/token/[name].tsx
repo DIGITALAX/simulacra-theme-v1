@@ -47,10 +47,10 @@ const TokenDetails = ({ token }: any): JSX.Element => {
   return (
     <div className="bg-gradient-to-b from-lightYellow via-white to-lightPurple min-h-fit h-[140rem] sm:h-[100rem] selection:bg-offBlue relative min-w-full w-full">
       <div className="absolute top-10 max-w-full">
-        <p className="font-jacklane text-7xl mb-4 left-12 absolute">
+        <p className="font-jacklane max-w-full text-4xl sm:text-7xl mb-4 left-12 absolute">
           {token[0].token.metadata.properties.name.toUpperCase()}
         </p>
-        <div className="mt-28 sm:mt-8 mb-24 relative h-[38rem] top-16 w-full block bg-offWhite justify-start border-t-8 border-b-8 border-lightWhite">
+        <div className="mt-10 sm:mt-28 sm:mt-8 mb-24 relative h-[38rem] top-16 w-full block bg-offWhite justify-start border-t-8 border-b-8 border-lightWhite">
           <div className="relative min-w-full min-h-full inline-block">
             <div className="absolute min-w-full min-h-[90%] top-7">
               <Image
