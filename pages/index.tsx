@@ -4,7 +4,7 @@ import { Collections } from "../components/common/Collections";
 
 const Home: NextPage = (): JSX.Element => {
   return (
-    <div className="bg-offPink">
+    <div>
       <Head>
         <title></title>
         <meta name="description" content="Simulacra Theme v1" />

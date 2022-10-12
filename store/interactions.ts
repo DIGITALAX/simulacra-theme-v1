@@ -13,7 +13,7 @@ export const loadTokens = async (dispatch: any): Promise<any> => {
       console.log("ERROR", response);
     } else {
       const tokens = await response.json();
-
+      console.log(tokens)
       dispatch({ type: "TOKENS_LOADED", tokens });
       return tokens;
     }

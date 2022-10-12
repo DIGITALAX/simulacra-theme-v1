@@ -19,6 +19,9 @@ module.exports = {
         offGreen: "#BEFD4E",
         offGray: "#FBFBEF",
         offBlue: "#40C0F3",
+        brightGreen: "#AAFDBE",
+        bronze: "#BB552D",
+        midBlue: "#709AF3"
       },
       fontFamily: {
         firaM: "Fira Medium",
