@@ -11,7 +11,7 @@ export const Collections = (): JSX.Element => {
   }, []);
   const tokens = useSelector((state: any) => state.tokens.tokens);
   return (
-    <div className="relative columns-1 sm:columns-2 md:columns-3 bg-lightYellow">
+    <div className="relative columns-1 sm:columns-2 md:columns-3 bg-gradient-to-b from-lightYellow via-white to-lightPurple selection:bg-offGreen">
       {tokens?.map((token: any, key: number) => {
         const metadataImage = token.token.metadata?.image.split("//");
         const imageURL = metadataImage[1].split("?");
@@ -50,14 +50,14 @@ export const Collections = (): JSX.Element => {
                 </a>
               </Link>
             </div>
-            <p className="relative top-5 float-left text-5xl mr-4 font-firaReg">
+            {/* <p className="relative top-5 float-left text-5xl mr-4 font-firaReg">
               0.32 Ξ
             </p>
             <p className="relative top-6 flex justify-end text-3xl font-firaReg">
               1/1
-            </p>
+            </p> */}
 
-            <div className="relative mt-4 top-10 mb-16 truncate-2-lines font-firaM text-xs">
+            <div className="relative mt-4 top-2 mb-16 truncate-2-lines font-firaM text-xs">
               {token.token.metadata.description}
             </div>
           </div>

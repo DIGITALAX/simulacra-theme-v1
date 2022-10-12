@@ -45,7 +45,7 @@ const TokenDetails = ({ token }: any): JSX.Element => {
   const metadataImage = token[0].token.metadata?.image.split("//");
   const imageURL = metadataImage[1].split("?");
   return (
-    <div className="bg-gradient-to-b from-lightYellow via-white to-lightPurple min-h-fit h-[100rem]">
+    <div className="bg-gradient-to-b from-lightYellow via-white to-lightPurple min-h-fit h-[100rem] selection:bg-offGreen">
       <div className="absolute top-10">
         <p className="font-jacklane text-7xl mb-4 left-12 absolute">
           {token[0].token.metadata.properties.name.toUpperCase()}
@@ -64,8 +64,8 @@ const TokenDetails = ({ token }: any): JSX.Element => {
             </div>
           </div>
         </div>
-        <div className="flex justify-end relative right-20 w-full h-full top-2 sm:top-6">
-          <p className="text-black font-firaL text-4xl absolute">0.32 Ξ</p>
+        <div className="flex justify-end relative right-96 w-full h-fit top-2 sm:top-6">
+          <p className="text-black font-firaL text-4xl absolute">0.32Ξ</p>
           <Link
             target="_blank"
             rel="noreferer"
@@ -88,13 +88,13 @@ const TokenDetails = ({ token }: any): JSX.Element => {
             Single Edition
           </p>
         </div>
-        <p className="font-firaReg text-sm mt-6 mb-2 w-5/6 sm:w-1/3 relative left-8 sm:left-12 top-28 sm:top-auto">
+        <p className="font-firaReg text-sm mt-6 mb-2 w-5/6 sm:w-1/3 relative left-8 sm:left-36 top-28 sm:top-auto">
           {token[0].token.metadata.description.split("Synth Graph:")[0]}
         </p>
-        <p className="font-firaB text-sm mt-6 relative left-8 sm:left-12 w-fit top-32 sm:top-auto">
+        <p className="font-firaB text-sm mt-6 relative left-8 sm:left-36 w-fit top-32 sm:top-auto">
           Synth Graph:{" "}
         </p>
-        <p className="font-firaReg text-sm w-5/6 sm:w-1/3 relative left-8 sm:left-12 top-36 sm:top-auto">
+        <p className="font-firaReg text-sm w-5/6 sm:w-1/3 relative left-8 sm:left-36 top-36 sm:top-auto">
           {token[0].token.metadata.description.split("Synth Graph:")[1]}
         </p>
       </div>

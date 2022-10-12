@@ -12,7 +12,8 @@ module.exports = {
         tagPink: "#FE8AA7",
         lightWhite: "#FBFBF1",
         lightYellow: "#FFFFF9",
-        lightPurple: "#EDE5FB"
+        lightPurple: "#EDE5FB",
+        offGreen: "#BEFD4E",
       },
       fontFamily: {
         firaM: "Fira Medium",
@@ -20,7 +21,7 @@ module.exports = {
         firaRet: "Fira Ret",
         firaReg: "Fira Reg",
         firaL: "Fira Light",
-        jacklane: "Jack Lane"
+        jacklane: "Jack Lane",
       },
       truncate: {
         lines: {
